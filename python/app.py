@@ -4,6 +4,7 @@ from flask_cors import CORS
 import request.request as req
 import controller.auth.auth as user
 import controller.attraction as attraction
+import controller.critique as critique
 
 app = Flask(__name__)
 CORS(app)
@@ -29,12 +30,22 @@ def addAttraction():
 
 @app.get('/attraction')
 def getAllAttraction():
-    result = attraction.get_all_attraction()
+    checkToken = user.check_token(request)
+    visible_only = (checkToken is not True)
+    if visible_only:
+        result = attraction.get_visible_attractions()
+    else:
+        result = attraction.get_all_attraction()
     return result, 200
+
 
 @app.get('/attraction/<int:index>')
 def getAttraction(index):
-    result = attraction.get_attraction(index)
+    checkToken = user.check_token(request)
+    visible_only = (checkToken is not True)
+    result = attraction.get_attraction(index, visible_only=visible_only)
+    if result == []:
+        return jsonify({"message": "Attraction non trouvee ou non visible"}), 404
     return result, 200
 
 @app.delete('/attraction/<int:index>')
@@ -50,6 +61,21 @@ def deleteAttraction(index):
     if (attraction.delete_attraction(index)):
         return "Element supprimé.", 200
     return jsonify({"message": "Erreur lors de la suppression."}), 500
+
+@app.get('/attraction/<int:index>/critiques')
+def getCritiques(index):
+    result = critique.get_critiques_for_attraction(index)
+    return result, 200
+
+
+@app.post('/attraction/<int:index>/critique')
+def addCritique(index):
+    json = request.get_json()
+    id_ = critique.add_critique(index, json)
+    if id_:
+        return jsonify({"message": "Critique ajoutee.", "result": id_}), 200
+    return jsonify({"message": "Erreur lors de l'ajout de la critique."}), 400
+
 
 @app.post('/login')
 def login():

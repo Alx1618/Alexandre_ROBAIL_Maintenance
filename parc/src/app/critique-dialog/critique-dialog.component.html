@@ -1,0 +1,38 @@
+<h2 mat-dialog-title i18n>Ajouter une critique - {{ attraction.nom }}</h2>
+<mat-dialog-content>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label i18n>Votre avis (texte)</mat-label>
+      <textarea matInput formControlName="texte" rows="4"></textarea>
+      @if (form.get('texte')?.invalid && form.get('texte')?.touched) {
+        <mat-error i18n>Le texte est requis (min. 10 caracteres)</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label i18n>Note (1 a 5)</mat-label>
+      <input matInput type="number" formControlName="note" min="1" max="5">
+      <mat-hint i18n>Entre 1 et 5</mat-hint>
+      @if (form.get('note')?.invalid && form.get('note')?.touched) {
+        <mat-error i18n>La note doit etre entre 1 et 5</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-slide-toggle formControlName="anonyme" class="full-width" i18n>Publier en anonyme</mat-slide-toggle>
+
+    @if (!form.get('anonyme')?.value) {
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label i18n>Nom</mat-label>
+        <input matInput formControlName="nom">
+      </mat-form-field>
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label i18n>Prenom</mat-label>
+        <input matInput formControlName="prenom">
+      </mat-form-field>
+    }
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button type="button" (click)="cancel()" i18n>Annuler</button>
+  <button mat-flat-button color="primary" type="button" (click)="onSubmit()" [disabled]="form.invalid" i18n>Envoyer</button>
+</mat-dialog-actions>

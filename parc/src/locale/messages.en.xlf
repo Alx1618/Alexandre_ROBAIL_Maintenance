@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="fr" target-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="9112633654982659978" datatype="html">
+        <source>Bienvenue sur le site internet du parc d&apos;attraction</source>
+        <target>Welcome to the theme park website</target>
+      </trans-unit>
+      <trans-unit id="1819842673313765459" datatype="html">
+        <source>Découvrez les attractions visibles ci-dessous. Vous pouvez consulter les critiques et en ajouter.</source>
+        <target>Discover the visible attractions below. You can view and add reviews.</target>
+      </trans-unit>
+      <trans-unit id="7856977816232797702" datatype="html">
+        <source>Difficulté : <x id="INTERPOLATION" equiv-text="{{ attraction.difficulte }}"/>/5</source>
+        <target>Difficulty: <x id="INTERPOLATION" equiv-text="{{ attraction.difficulte }}"/>/5</target>
+      </trans-unit>
+      <trans-unit id="8001634891960256073" datatype="html">
+        <source>Page administrateur pour <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button mat-button (click)=&quot;addAttraction()&quot;&gt;"/>Ajouter<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>, modifier et supprimer des attractions</source>
+        <target>Admin page to <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button mat-button (click)=&quot;addAttraction()&quot;&gt;"/>Add<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>, edit and delete attractions</target>
+      </trans-unit>
+      <trans-unit id="3416485823535414220" datatype="html">
+        <source>Nom de l&apos;attraction</source>
+        <target>Attraction name</target>
+      </trans-unit>
+      <trans-unit id="7287191990850185862" datatype="html">
+        <source>Description de l&apos;attraction</source>
+        <target>Attraction description</target>
+      </trans-unit>
+      <trans-unit id="1102715820658871489" datatype="html">
+        <source>Difficulté de l&apos;attraction / 5</source>
+        <target>Attraction difficulty / 5</target>
+      </trans-unit>
+      <trans-unit id="3712758505200425308" datatype="html">
+        <source>Visible</source>
+        <target>Visible</target>
+      </trans-unit>
+      <trans-unit id="5363451304863092478" datatype="html">
+        <source>Nom</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="4902817035128594900" datatype="html">
+        <source>Description</source>
+        <target>Description</target>
+      </trans-unit>
+      <trans-unit id="1490236106293192741" datatype="html">
+        <source>Difficulté / 5</source>
+        <target>Difficulty / 5</target>
+      </trans-unit>
+      <trans-unit id="1725119487503534238" datatype="html">
+        <source>Element visible</source>
+        <target>Visible item</target>
+      </trans-unit>
+      <trans-unit id="4977912145007192180" datatype="html">
+        <source>Enregistrer</source>
+        <target>Save</target>
+      </trans-unit>
+      <trans-unit id="6187391662882677657" datatype="html">
+        <source>Parc d&apos;attraction</source>
+        <target>Theme park</target>
+      </trans-unit>
+      <trans-unit id="6446192435648820310" datatype="html">
+        <source>Déconnexion</source>
+        <target>Logout</target>
+      </trans-unit>
+      <trans-unit id="5930346488750737747" datatype="html">
+        <source>Ajouter une critique - <x id="INTERPOLATION" equiv-text="{{ attraction.nom }}"/></source>
+        <target>Add a review - <x id="INTERPOLATION" equiv-text="{{ attraction.nom }}"/></target>
+      </trans-unit>
+      <trans-unit id="1676259439323233293" datatype="html">
+        <source>Votre avis (texte)</source>
+        <target>Your review (text)</target>
+      </trans-unit>
+      <trans-unit id="8479478903694518850" datatype="html">
+        <source>Le texte est requis (min. 10 caracteres)</source>
+        <target>Text is required (min. 10 characters)</target>
+      </trans-unit>
+      <trans-unit id="6748678747811297885" datatype="html">
+        <source>Note (1 a 5)</source>
+        <target>Rating (1 to 5)</target>
+      </trans-unit>
+      <trans-unit id="3013692364592622566" datatype="html">
+        <source>Entre 1 et 5</source>
+        <target>Between 1 and 5</target>
+      </trans-unit>
+      <trans-unit id="6478650111589655912" datatype="html">
+        <source>La note doit etre entre 1 et 5</source>
+        <target>Rating must be between 1 and 5</target>
+      </trans-unit>
+      <trans-unit id="2632901248822200292" datatype="html">
+        <source>Publier en anonyme</source>
+        <target>Post anonymously</target>
+      </trans-unit>
+      <trans-unit id="3942107207784466817" datatype="html">
+        <source>Prenom</source>
+        <target>First name</target>
+      </trans-unit>
+      <trans-unit id="1711750570766225138" datatype="html">
+        <source>Annuler</source>
+        <target>Cancel</target>
+      </trans-unit>
+      <trans-unit id="7243381769177289361" datatype="html">
+        <source>Envoyer</source>
+        <target>Submit</target>
+      </trans-unit>
+      <trans-unit id="1533381317247356206" datatype="html">
+        <source>Ajouter une critique</source>
+        <target>Add a review</target>
+      </trans-unit>
+      <trans-unit id="2853507261033839396" datatype="html">
+        <source>Anonyme</source>
+        <target>Anonymous</target>
+      </trans-unit>
+      <trans-unit id="7551002979022540900" datatype="html">
+        <source>Note : <x id="INTERPOLATION" equiv-text="{{ c.note }}"/>/5</source>
+        <target>Rating: <x id="INTERPOLATION" equiv-text="{{ c.note }}"/>/5</target>
+      </trans-unit>
+      <trans-unit id="6270622798837589783" datatype="html">
+        <source>Aucune critique pour le moment.</source>
+        <target>No reviews yet.</target>
+      </trans-unit>
+      <trans-unit id="8538638472238576115" datatype="html">
+        <source>Connexion à la page administrateur</source>
+        <target>Admin login</target>
+      </trans-unit>
+      <trans-unit id="5249891717669571568" datatype="html">
+        <source>Mot de passe</source>
+        <target>Password</target>
+      </trans-unit>
+      <trans-unit id="6103118278620987967" datatype="html">
+        <source>Connexion</source>
+        <target>Login</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

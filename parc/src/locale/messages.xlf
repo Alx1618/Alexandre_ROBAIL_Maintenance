@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="fr" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="9112633654982659978" datatype="html">
+        <source>Bienvenue sur le site internet du parc d&apos;attraction</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/accueil/accueil.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1819842673313765459" datatype="html">
+        <source>Découvrez les attractions visibles ci-dessous. Vous pouvez consulter les critiques et en ajouter.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/accueil/accueil.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7856977816232797702" datatype="html">
+        <source>Difficulté : <x id="INTERPOLATION" equiv-text="{{ attraction.difficulte }}"/>/5</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/accueil/accueil.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8001634891960256073" datatype="html">
+        <source>Page administrateur pour <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button mat-button (click)=&quot;addAttraction()&quot;&gt;"/>Ajouter<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>, modifier et supprimer des attractions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin/admin.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3416485823535414220" datatype="html">
+        <source>Nom de l&apos;attraction</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin/admin.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7287191990850185862" datatype="html">
+        <source>Description de l&apos;attraction</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin/admin.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1102715820658871489" datatype="html">
+        <source>Difficulté de l&apos;attraction / 5</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin/admin.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3712758505200425308" datatype="html">
+        <source>Visible</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin/admin.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5363451304863092478" datatype="html">
+        <source>Nom</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin/admin.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-dialog/critique-dialog.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4902817035128594900" datatype="html">
+        <source>Description</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin/admin.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1490236106293192741" datatype="html">
+        <source>Difficulté / 5</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin/admin.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1725119487503534238" datatype="html">
+        <source>Element visible</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin/admin.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4977912145007192180" datatype="html">
+        <source>Enregistrer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/admin/admin.component.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6187391662882677657" datatype="html">
+        <source>Parc d&apos;attraction</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6446192435648820310" datatype="html">
+        <source>Déconnexion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5930346488750737747" datatype="html">
+        <source>Ajouter une critique - <x id="INTERPOLATION" equiv-text="{{ attraction.nom }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-dialog/critique-dialog.component.html</context>
+          <context context-type="linenumber">1,2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1676259439323233293" datatype="html">
+        <source>Votre avis (texte)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-dialog/critique-dialog.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8479478903694518850" datatype="html">
+        <source>Le texte est requis (min. 10 caracteres)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-dialog/critique-dialog.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6748678747811297885" datatype="html">
+        <source>Note (1 a 5)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-dialog/critique-dialog.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3013692364592622566" datatype="html">
+        <source>Entre 1 et 5</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-dialog/critique-dialog.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6478650111589655912" datatype="html">
+        <source>La note doit etre entre 1 et 5</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-dialog/critique-dialog.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2632901248822200292" datatype="html">
+        <source>Publier en anonyme</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-dialog/critique-dialog.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3942107207784466817" datatype="html">
+        <source>Prenom</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-dialog/critique-dialog.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1711750570766225138" datatype="html">
+        <source>Annuler</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-dialog/critique-dialog.component.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7243381769177289361" datatype="html">
+        <source>Envoyer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-dialog/critique-dialog.component.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1533381317247356206" datatype="html">
+        <source>Ajouter une critique</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-list/critique-list.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7551002979022540900" datatype="html">
+        <source>Note : <x id="INTERPOLATION" equiv-text="{{ c.note }}"/>/5</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-list/critique-list.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6270622798837589783" datatype="html">
+        <source>Aucune critique pour le moment.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-list/critique-list.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2853507261033839396" datatype="html">
+        <source>Anonyme</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/critique-list/critique-list.component.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <note priority="1" from="description">Anonymous author label</note>
+      </trans-unit>
+      <trans-unit id="8538638472238576115" datatype="html">
+        <source>Connexion à la page administrateur</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5249891717669571568" datatype="html">
+        <source>Mot de passe</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6103118278620987967" datatype="html">
+        <source>Connexion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

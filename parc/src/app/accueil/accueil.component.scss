@@ -1,19 +1,85 @@
-.attraction-title {
-  font-size: 18px;
-  font-weight: 500;
-  background-color: darkgrey;
-  width: fit-content;
-  margin-top: 25px;
+.page-card {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 40px 36px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
 }
-.attraction {
-  display: flex;
-  align-items: center;
-  column-gap: 25px;
-  width: fit-content;
 
-  border-bottom: solid 1px grey;
-  span {
-    padding: 5px;
-    width: 250px;
-  }
+.page-card mat-card-header {
+  margin-bottom: 20px;
 }
+
+.page-card mat-card-title {
+  font-size: 1.75rem !important;
+  color: #0d47a1 !important;
+  font-weight: 700;
+}
+
+.intro {
+  margin-bottom: 32px;
+  color: #1565c0;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.attractions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.attraction-card {
+  background: white;
+  border-left: 4px solid #78909c;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(13, 71, 161, 0.2);
+  }
+
+  mat-card-header {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    margin: -16px -16px 0 -16px;
+    padding: 18px 16px;
+  }
+
+  mat-card-content {
+    padding: 20px 16px;
+  }
+
+  mat-card-title {
+    color: #0d47a1 !important;
+    font-weight: 600;
+    font-size: 1.2rem !important;
+  }
+
+  .description {
+    margin: 0 0 14px;
+    color: #37474f;
+    line-height: 1.5;
+  }
+
+  .difficulte {
+    margin: 0;
+    font-size: 1.2rem;
+    display: inline-flex;
+    letter-spacing: 2px;
+    font-weight: 600;
+
+    .star-filled {
+      color: inherit;
+    }
+
+    .star-empty {
+      color: #bdbdbd;
+    }
+  }
+
+  .difficulte-1 .star-filled { color: #2e7d32; }
+  .difficulte-2 .star-filled { color: #558b2f; }
+  .difficulte-3 .star-filled { color: #f9a825; }
+  .difficulte-4 .star-filled { color: #ef6c00; }
+  .difficulte-5 .star-filled { color: #c62828; }
+} 

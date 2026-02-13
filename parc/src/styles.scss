@@ -1,4 +1,82 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global styles - Parc d'attraction */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+$primary: #0d47a1;
+$primary-light: #1976d2;
+$primary-dark: #002171;
+$accent: #ff6f00;
+$accent-light: #ffab40;
+$success: #2e7d32;
+$bg-page: #e3f2fd;
+$card-bg: #ffffff;
+$text-muted: rgba(0, 0, 0, 0.7);
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: linear-gradient(160deg, #e3f2fd 0%, #bbdefb 40%, #90caf9 100%);
+  background-attachment: fixed;
+  color: #1a237e;
+  min-height: 100vh;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $accent;
+    text-decoration: none;
+  }
+}
+
+mat-toolbar {
+  background: linear-gradient(90deg, $primary-dark 0%, $primary 50%, $primary-light 100%) !important;
+  color: white !important;
+  box-shadow: 0 4px 12px rgba(13, 71, 161, 0.4);
+  padding: 0 24px;
+
+  a {
+    color: white !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    &:hover {
+      color: $accent-light !important;
+    }
+  }
+
+  button {
+    color: white !important;
+    border-color: rgba(255, 255, 255, 0.7) !important;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.15) !important;
+      border-color: white !important;
+    }
+  }
+}
+
+mat-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(13, 71, 161, 0.15);
+  border: 1px solid rgba(13, 71, 161, 0.1);
+  overflow: hidden;
+}
+
+.mat-mdc-button, .mat-mdc-raised-button {
+  &.mat-primary {
+    background: linear-gradient(135deg, $primary 0%, $primary-light 100%) !important;
+  }
+}
+
+.main-content {
+  padding: 0 16px 32px;
+  min-height: calc(100vh - 64px);
+}
+

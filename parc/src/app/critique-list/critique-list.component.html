@@ -1,0 +1,15 @@
+<div class="critique-block">
+  <button mat-stroked-button (click)="openDialog()" i18n>Ajouter une critique</button>
+  <div class="critiques-list">
+    <ng-container *ngIf="critiques$ | async as critiques">
+      <div class="critique-item" *ngFor="let c of critiques">
+        <span class="author">{{ displayName(c) }}</span>
+        <span class="note" i18n>Note : {{ c.note }}/5</span>
+        <p class="texte">{{ c.texte }}</p>
+      </div>
+      @if (critiques.length === 0) {
+        <p class="no-critiques" i18n>Aucune critique pour le moment.</p>
+      }
+    </ng-container>
+  </div>
+</div>

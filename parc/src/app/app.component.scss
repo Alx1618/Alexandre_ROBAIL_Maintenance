@@ -2,4 +2,10 @@ mat-toolbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 64px;
+}
+
+:host {
+  display: block;
+  min-height: 100vh;
 }
