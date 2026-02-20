@@ -1,9 +1,9 @@
 <mat-card class="page-card">
   <mat-card-header>
-    <mat-card-title i18n>Bienvenue sur le site internet du parc d'attraction</mat-card-title>
+    <mat-card-title>{{ 'Bienvenue sur le site internet du parc d\'attraction' | translate }}</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <p class="intro" i18n>Découvrez les attractions visibles ci-dessous. Vous pouvez consulter les critiques et en ajouter.</p>
+    <p class="intro">{{ 'Découvrez les attractions visibles ci-dessous. Vous pouvez consulter les critiques et en ajouter.' | translate }}</p>
     <div class="attractions-grid">
       <ng-container *ngFor="let attraction of attractions | async">
         <mat-card class="attraction-card">

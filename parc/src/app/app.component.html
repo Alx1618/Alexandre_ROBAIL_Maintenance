@@ -1,7 +1,10 @@
 <mat-toolbar>
-  <span><a routerLink="/accueil" i18n>Parc d'attraction</a></span>
-  <div *ngIf="authService.isLoggedIn">
-    <button mat-stroked-button (click)="logout()" i18n>Déconnexion</button>
+  <span><a routerLink="/accueil">{{ 'Parc d\'attraction' | translate }}</a></span>
+  <div class="toolbar-actions">
+    <button mat-stroked-button (click)="toggleLanguage()" class="lang-button" [attr.aria-label]="'Changer la langue'">
+      {{ getLanguageLabel() }}
+    </button>
+    <button *ngIf="authService.isLoggedIn" mat-stroked-button (click)="logout()">{{ 'Déconnexion' | translate }}</button>
   </div>
 </mat-toolbar>
 

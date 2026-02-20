@@ -1,14 +1,14 @@
 <div class="critique-block">
-  <button mat-stroked-button (click)="openDialog()" i18n>Ajouter une critique</button>
+  <button mat-stroked-button (click)="openDialog()">{{ 'Ajouter une critique' | translate }}</button>
   <div class="critiques-list">
     <ng-container *ngIf="critiques$ | async as critiques">
       <div class="critique-item" *ngFor="let c of critiques">
         <span class="author">{{ displayName(c) }}</span>
-        <span class="note" i18n>Note : {{ c.note }}/5</span>
+        <span class="note">{{ 'Note : {{note}}/5' | translate: {note: c.note} }}</span>
         <p class="texte">{{ c.texte }}</p>
       </div>
       @if (critiques.length === 0) {
-        <p class="no-critiques" i18n>Aucune critique pour le moment.</p>
+        <p class="no-critiques">{{ 'Aucune critique pour le moment.' | translate }}</p>
       }
     </ng-container>
   </div>

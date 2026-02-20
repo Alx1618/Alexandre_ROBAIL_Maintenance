@@ -5,11 +5,12 @@ import { Observable } from 'rxjs';
 import { AttractionInterface } from '../Interface/attraction.interface';
 import { MatCardModule } from '@angular/material/card';
 import { CritiqueListComponent } from '../critique-list/critique-list.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-accueil',
   standalone: true,
-  imports: [CommonModule, MatCardModule, CritiqueListComponent],
+  imports: [CommonModule, MatCardModule, CritiqueListComponent, TranslateModule],
   templateUrl: './accueil.component.html',
   styleUrl: './accueil.component.scss'
 })

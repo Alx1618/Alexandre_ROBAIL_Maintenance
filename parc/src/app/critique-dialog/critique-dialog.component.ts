@@ -8,6 +8,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { AttractionInterface } from '../Interface/attraction.interface';
 import { CritiqueFormInterface } from '../Interface/critique.interface';
 import { AttractionService } from '../Service/attraction.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 export interface CritiqueDialogData {
   attraction: AttractionInterface;
@@ -23,6 +24,7 @@ export interface CritiqueDialogData {
     MatInputModule,
     MatButtonModule,
     MatSlideToggleModule,
+    TranslateModule,
   ],
   templateUrl: './critique-dialog.component.html',
   styleUrl: './critique-dialog.component.scss',

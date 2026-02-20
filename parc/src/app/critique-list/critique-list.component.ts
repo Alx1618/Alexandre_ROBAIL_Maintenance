@@ -8,11 +8,12 @@ import { CritiqueInterface } from '../Interface/critique.interface';
 import { AttractionService } from '../Service/attraction.service';
 import { CritiqueDialogComponent, CritiqueDialogData } from '../critique-dialog/critique-dialog.component';
 import { Observable, of } from 'rxjs';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-critique-list',
   standalone: true,
-  imports: [CommonModule, MatButtonModule, MatCardModule, MatDialogModule],
+  imports: [CommonModule, MatButtonModule, MatCardModule, MatDialogModule, TranslateModule],
   templateUrl: './critique-list.component.html',
   styleUrl: './critique-list.component.scss',
 })
@@ -21,6 +22,7 @@ export class CritiqueListComponent implements OnChanges {
 
   private readonly attractionService = inject(AttractionService);
   private readonly dialog = inject(MatDialog);
+  private readonly translate = inject(TranslateService);
 
   critiques$: Observable<CritiqueInterface[]> = of([]);
 
@@ -58,6 +60,6 @@ export class CritiqueListComponent implements OnChanges {
     if (c.nom || c.prenom) {
       return [c.prenom, c.nom].filter(Boolean).join(' ');
     }
-    return $localize`:Anonymous author label:Anonyme`;
+    return this.translate.instant('Anonyme');
   }
 }
